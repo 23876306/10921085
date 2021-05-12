@@ -1,20 +1,15 @@
-class Hero:
-    def __init__(self, name, atk, deff, hp, power ):
-        self.heroName = name
-        self.heroAtk = atk
-        self.heroDef = deff
-        self.heroHp = hp
-        self.heroPower = power
+class Student:
+    def __init__(self,name ,school,work,grade,number):
+        self.studentName = name
+        self.studentSchool = school
+        self.studentWork = work
+        self.studentGrade = grade
+        self.studentNumber = number
     def showinfo(x):
-        print(x.heroName, x.heroAtk, x.heroDef , x.heroHp, x.heroPower)
- 
-x1 = Hero("武藏", 3000, 2500, 3000, 8)
-x2 = Hero("黑教徒", 1000, 1300, 500, 4)
-x3 = Hero("盾兵", 1200, 2200, 2000, 6)
+        print(x.studentName,"\t",x.studentSchool,"\t",x.studentWork,"\t",x.studentGrade,"\t",x.studentNumber,"\t")
 
+x1 = Student("張祐瑋","亞洲","資工",1,85)
 x1.showinfo()
-x2.showinfo()
-x3.showinfo()
 
 
 class Chess:
@@ -27,9 +22,9 @@ class Chess:
     def showinfo(y):
         print(y.chessName,"\t", y.chessColor,"\t", y.chessLevel, "\t", y.chessStep, "\t", y.chessCost)
 
-y1 = Hero("將", "Black", 100, 1, 10)
-y2 = Hero("帥", "Red", 100, 1, 10)
-y3 = Hero("車", "Black", 80, 10, 7)
+y1 = Chess("將", "Black", 100, 1, 10)
+y2 = Chess("帥", "Red", 100, 1, 10)
+y3 = Chess("車", "Black", 80, 10, 7)
 
 
 y1.showinfo()
